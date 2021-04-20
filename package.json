@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/LTUC/simpsons-app.git"
   },
-  "author": "thamudi (Tamim Hamoudi), Rawan Al Nujoom, Dario Thornhill",
+  "author": "thamudi (Tamim Hamoudi)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/LTUC/simpsons-app/issues"
@@ -25,5 +25,7 @@
     "method-override": "^3.0.0",
     "pg": "^8.5.1",
     "superagent": "^6.1.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }

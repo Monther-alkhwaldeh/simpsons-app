@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <% quotes.forEach((element)=>{ %>
+            <section>
+            <h1><%= element.quote%></h1>
+            <h2><%= element.character%></h2>
+            <img src="<%=element.image%>" alt="">
+            <p><%=element.characterDirection</p>
+            <form action="/saveQuote" method="POST">
+                <input type="hidden" name="quote" value="<%= element.quote%>">
+                <input type="hidden" name="character" value="<%= element.character%>">
+                <input type="hidden" name="image" value="<%= element.image%>">
+                <input type="hidden" name="characterDirection" value="<%= element.characterDirection%>">
+                <input type="submit" value="Add quote">
+            </form>
+            <section>
+        <% }) %>
+
+         </section>
+     </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
